@@ -8,13 +8,13 @@ const monsterSchema = new mongoose.Schema(
 		},
 		type: {
 			type: String,
-			required: true,
+      default: 'UNKNOWN'
 		},
     funFacts: String,
 		owner: {
 			type: mongoose.Schema.Types.ObjectId,
 			ref: 'User',
-			required: true,
+      default: 'There is nothing fun about this monster...'
 		},
 	},
 	{
